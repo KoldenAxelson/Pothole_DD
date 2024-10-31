@@ -3,17 +3,19 @@
 A full-stack AI application for detecting and analyzing road damage from dashcam footage, built with React, Remix, PostgreSQL, and AWS Serverless - mirroring production-grade architecture patterns.
 
 ## 🎯 Project Planning & Setup
-- [X] Define clear scope: Pothole detection from dashcam-style images
-- [X] Set up GitHub repository
-- [ ] Initialize Remix project
-  - [ ] Set up TypeScript
-  - [ ] Configure ESLint
-  - [ ] Set up Prettier
+
+- [x] Define clear scope: Pothole detection from dashcam-style images
+- [x] Set up GitHub repository
+- [x] Initialize Remix project
+  - [x] Set up TypeScript
+  - [x] Configure ESLint
+  - [x] Set up Prettier
 - [ ] Set up AWS free tier account
 - [ ] Initialize PostgreSQL database
 - [ ] Design serverless architecture with Step Functions workflow
 
 ## 📊 Data Preparation
+
 - [ ] Download RDDC (Road Damage Detection Challenge) dataset
 - [ ] Download supplementary data from Mapillary Vistas
 - [ ] Create data preprocessing pipeline:
@@ -29,6 +31,7 @@ A full-stack AI application for detecting and analyzing road damage from dashcam
 - [ ] Implement data augmentation
 
 ## 🤖 ML Model Development
+
 - [ ] Start with pretrained model (ResNet or YOLO)
 - [ ] Set up training pipeline
 - [ ] Train initial model
@@ -41,6 +44,7 @@ A full-stack AI application for detecting and analyzing road damage from dashcam
 - [ ] Export model for production
 
 ## 🌐 Remix Route Development
+
 - [ ] Set up route structure:
   ```
   app/
@@ -59,6 +63,7 @@ A full-stack AI application for detecting and analyzing road damage from dashcam
 - [ ] Implement optimistic UI updates
 
 ## ☁️ AWS Integration
+
 - [ ] Set up S3 bucket for image storage
 - [ ] Set up RDS for PostgreSQL
 - [ ] Create Lambda functions:
@@ -71,6 +76,7 @@ A full-stack AI application for detecting and analyzing road damage from dashcam
 - [ ] Set up CloudWatch monitoring
 
 ## ⚛️ Frontend Development (Remix + React)
+
 - [ ] Set up shadcn/ui components
 - [ ] Create nested layouts
 - [ ] Implement image upload with preview
@@ -82,7 +88,9 @@ A full-stack AI application for detecting and analyzing road damage from dashcam
 - [ ] Implement optimistic UI updates
 
 ## 💾 Database Design
+
 ### PostgreSQL Schema
+
 ```sql
 -- Image metadata
 CREATE TABLE images (
@@ -123,6 +131,7 @@ CREATE INDEX idx_model_metrics ON model_metrics(model_version);
 ```
 
 ## 🧪 Testing & Documentation
+
 - [ ] Set up Vitest for unit testing
 - [ ] Set up Playwright for E2E testing
 - [ ] Write tests for:
@@ -135,6 +144,7 @@ CREATE INDEX idx_model_metrics ON model_metrics(model_version);
 - [ ] Create environment setup guide
 
 ## 🚀 Final Steps
+
 - [ ] Deploy MVP version
 - [ ] Create presentation focusing on:
   - [ ] Remix architecture decisions
@@ -147,6 +157,7 @@ CREATE INDEX idx_model_metrics ON model_metrics(model_version);
 - [ ] Prepare deployment guide
 
 ## Tech Stack
+
 - Frontend: React + Remix
 - Database: PostgreSQL (RDS)
 - ML: PyTorch
@@ -155,16 +166,21 @@ CREATE INDEX idx_model_metrics ON model_metrics(model_version);
 - Testing: Vitest + Playwright
 
 ## Getting Started
+
 (To be updated with setup instructions)
 
 ## Contributing
+
 (To be updated with contribution guidelines)
 
 ## License
+
 MIT
 
 ## Project Status
+
 🚧 Under Development
 
 ---
+
 Note: This project demonstrates proficiency in the exact tech stack used in production, focusing on Remix patterns, PostgreSQL optimization, and AWS serverless architecture.
