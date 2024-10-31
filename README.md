@@ -10,7 +10,7 @@ A full-stack AI application for detecting and analyzing road damage from dashcam
   - [x] Set up TypeScript
   - [x] Configure ESLint
   - [x] Set up Prettier
-- [ ] Set up AWS free tier account
+- [x] Set up AWS free tier account
 - [ ] Initialize PostgreSQL database
 - [ ] Design serverless architecture with Step Functions workflow
 
