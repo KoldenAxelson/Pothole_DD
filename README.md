@@ -12,7 +12,7 @@ A full-stack AI application for detecting and analyzing road damage from dashcam
   - [x] Set up Prettier
 - [x] Set up AWS free tier account
 - [x] Initialize PostgreSQL database
-- [ ] Design serverless architecture with Step Functions workflow
+- [x] Design serverless architecture with Step Functions workflow
 
 ## 📊 Data Preparation
 

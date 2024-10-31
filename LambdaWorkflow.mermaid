@@ -1,0 +1,59 @@
+stateDiagram-v2
+    [*] --> ImageUpload
+    
+    state "Image Upload" as ImageUpload {
+        [*] --> ValidateImage
+        ValidateImage --> GeneratePresignedURL
+        GeneratePresignedURL --> UpdateDatabase
+        UpdateDatabase --> [*]
+    }
+    
+    ImageUpload --> PreprocessingLambda
+    
+    state "Image Preprocessing" as PreprocessingLambda {
+        [*] --> ResizeImage
+        ResizeImage --> Normalize
+        Normalize --> ExtractMetadata
+        ExtractMetadata --> [*]
+    }
+    
+    PreprocessingLambda --> MLInference
+    
+    state "ML Processing" as MLInference {
+        [*] --> LoadModel
+        LoadModel --> DetectPotholes
+        DetectPotholes --> CalculateConfidence
+        CalculateConfidence --> [*]
+    }
+    
+    MLInference --> ResultProcessing
+    
+    state "Result Processing" as ResultProcessing {
+        [*] --> ValidateResults
+        ValidateResults --> StoreResults
+        StoreResults --> UpdateMetrics
+        UpdateMetrics --> [*]
+    }
+    
+    ResultProcessing --> NotifyClient
+    NotifyClient --> [*]
+
+    note right of ImageUpload
+        Handles S3 upload and
+        initial DB record
+    end note
+
+    note right of PreprocessingLambda
+        Prepares image for
+        ML processing
+    end note
+
+    note right of MLInference
+        Runs inference with
+        error handling
+    end note
+
+    note right of ResultProcessing
+        Stores results and
+        updates metrics
+    end note
